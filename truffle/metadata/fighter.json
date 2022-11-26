@@ -1,0 +1,8 @@
+{
+  "name": "Fighter",
+  "description": "Can usually be found in the arena",
+  "image": "https://ether-arena.infura-ipfs.io/ipfs/QmQfms88XP9WMeFUd3BALjKiiqQWPopxzMeJG1K8mz9JA1",
+  "attributes": [
+    { "trait_type": "power_level", "value": "1"}
+  ]
+}
