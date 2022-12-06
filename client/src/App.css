@@ -2,13 +2,137 @@
   font-size: 1.5rem;
 }
 
+.container {
+  text-align: center;
+}
+
 .fighter {
   height: 300px;
   width: 300px;
+  margin-top: 10px;
 }
 
-.fighterInventory {
+.btnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btnContainer div button {
+  margin: 5px;
+}
+
+/* Inventory styling */
+
+.inventoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow-x: auto;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.inventoryContainer div {
+  margin: 5px;
+  transition: box-shadow .3s;
+}
+
+.inventoryContainer div:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inventoryImg {
   height: 100px;
   width: 100px;
 }
 
+/* Loader styling */
+
+.dotContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 5px;
+}
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: black;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: .5s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: black;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: black;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: black;
+  }
+  50%,
+  100% {
+    background-color: gray;
+  }
+}
+
+/* Leaderboard styling */
+
+.leaderboardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  align-content: flex-start;
+}
+.leaderboardContainer div {
+  flex: 0 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: 5px;
+}
+
+ol {
+  text-align: start;
+}
