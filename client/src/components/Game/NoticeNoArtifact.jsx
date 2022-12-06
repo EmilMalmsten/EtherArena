@@ -1,7 +1,7 @@
 function NoticeNoArtifact() {
   return (
     <p>
-      ⚠️ Cannot find the EtherArena contract artifact.
+      ⚠️  Please connect your metamask wallet to join the game.
     </p>
   );
 }
