@@ -9,6 +9,8 @@ The first fighter to reach a power level over 9000 wins the current fighting rou
 
 Losing fighters remain locked.
 
+Built with Truffle, Web3.js and React
+
 
 ## FAQ
 
