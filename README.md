@@ -5,7 +5,7 @@ All fighters are locked and can not be transferred.
 
 Fighters can be upgraded once every 24 hours to increase their power level.
 
-The first fighter to reach a power level over 9000 wins the current fighting round and gets released from the arena. (Which means that the token can now be transferred)
+The first fighter to reach a power level over 9000 wins the current fighting round and gets released from the arena. (Which means that the token can now be transferred). Winning fighters also get their art upgraded.
 
 Losing fighters remain locked.
 
